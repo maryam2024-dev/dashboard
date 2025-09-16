@@ -1,21 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.text-neon-green {
-  color: #39ff14;
+/* Luxury Color Palette */
+.text-luxury-gold {
+  color: #D4AF37;
 }
 
-.text-neon-pink {
-  color: #ff00ff;
+.text-luxury-gold-dark {
+  color: #B8860B;
 }
 
-.bg-neon-blue {
-  background: #00f0ff;
+.text-luxury-navy {
+  color: #1a1a2e;
 }
 
-.drop-shadow-glow {
-  text-shadow: 0 0 10px currentColor,
-               0 0 20px currentColor,
-               0 0 40px currentColor;
+.text-luxury-black {
+  color: #0f0f0f;
 }
+
+.text-luxury-white {
+  color: #fafafa;
+}
+
+.bg-luxury-gold {
+  background-color: #D4AF37;
+}
+
+.bg-luxury-gold-dark {
+  background-color: #B8860B;
+}
+
+.bg-luxury-navy {
+  background-color: #1a1a2e;
+}
+
+.bg-luxury-black {
+  background-color: #0f0f0f;
+}
+
+.bg-luxury-white {
+  background-color: #fafafa;
+}
+
+/* Luxury gradient backgrounds */
+.bg-luxury-gradient {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f0f0f 100%);
+}
+
+.bg-luxury-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+}
+
+.bg-luxury-radial-gradient {
+  background: radial-gradient(ellipse at center, #1a1a2e 0%, #0f0f0f 70%);
+}
+
+/* Luxury Typography */
+.font-luxury-heading {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-luxury-body {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-luxury-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.text-luxury-subheading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+/* Luxury Shadows */
+.shadow-luxury-soft {
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.1);
+}
+
+.shadow-luxury-medium {
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.15);
+}
+
+.shadow-luxury-strong {
+  box-shadow: 0 12px 40px rgba(212, 175, 55, 0.2);
+}
+
+.text-shadow-luxury {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Premium Button Styles */
+.btn-luxury-primary {
+  @apply font-luxury-body font-medium px-8 py-4 rounded-lg transition-all duration-300 ease-in-out;
+  background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+  color: #0f0f0f;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-luxury-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+}
+
+.btn-luxury-secondary {
+  @apply font-luxury-body font-medium px-8 py-4 rounded-lg transition-all duration-300 ease-in-out;
+  background: transparent;
+  color: #D4AF37;
+  border: 2px solid #D4AF37;
+}
+
+.btn-luxury-secondary:hover {
+  background: #D4AF37;
+  color: #0f0f0f;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Luxury Animations */
+.luxury-fade-in {
+  animation: luxuryFadeIn 0.8s ease-out forwards;
+}
+
+.luxury-slide-up {
+  animation: luxurySlideUp 0.6s ease-out forwards;
+}
+
+@keyframes luxuryFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes luxurySlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
