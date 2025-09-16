@@ -2,20 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-neon-green {
-  color: #39ff14;
+/* Luxury Color Palette */
+.text-luxury-gold {
+  color: #D4AF37;
 }
 
-.text-neon-pink {
-  color: #ff00ff;
+.text-luxury-gold-dark {
+  color: #B8860B;
 }
 
-.bg-neon-blue {
-  background: #00f0ff;
+.text-luxury-navy {
+  color: #1a1a2e;
 }
 
-.drop-shadow-glow {
-  text-shadow: 0 0 10px currentColor,
-               0 0 20px currentColor,
-               0 0 40px currentColor;
+.text-luxury-black {
+  color: #0f0f0f;
 }
+
+.text-luxury-white {
+  color: #fafafa;
+}
+
+.bg-luxury-gold {
+  background-color: #D4AF37;
+}
+
+.bg-luxury-gold-dark {
+  background-color: #B8860B;
+}
+
+.bg-luxury-navy {
+  background-color: #1a1a2e;
+}
+
+.bg-luxury-black {
+  background-color: #0f0f0f;
+}
+
+.bg-luxury-white {
+  background-color: #fafafa;
+}
+
+/* Luxury gradient backgrounds */
+.bg-luxury-gradient {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f0f0f 100%);
+}
+
+.bg-luxury-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+}
+
